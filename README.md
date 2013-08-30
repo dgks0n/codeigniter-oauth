@@ -79,7 +79,8 @@ $this->curl->proxy_login('username', 'password');
 // Execute - returns responce
 echo $this->curl->execute();
 
-// Debug data ------------------------------------------------
+// Debug data 
+------------------------------------------------
 
 // Errors
 $this->curl->error_code; // int
