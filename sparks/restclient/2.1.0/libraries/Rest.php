@@ -2,7 +2,7 @@
 /**
  * CodeIgniter REST Class
  *
- * Make REST requests to RESTful services with simple syntax.
+ * Mske REST requests to RESTful services with simple syntax.
  *
  * @package        	CodeIgniter
  * @subpackage    	Libraries
@@ -38,7 +38,7 @@ class REST
 	protected $rest_server;
 	protected $format;
 	protected $mime_type;
-
+	
 	protected $http_auth = null;
 	protected $http_user = null;
 	protected $http_pass = null;
@@ -55,9 +55,9 @@ class REST
 		
 		$this->_ci->load->library('curl');
 		*/
-
+		
 		// Load the cURL spark which this is dependant on
-		$this->_ci->load->spark('curl/1.2.1');
+		$this->_ci->load->spark('curl/1.2.0');
 
 		// If a URL was passed to the library
 		empty($config) OR $this->initialize($config);
@@ -237,7 +237,7 @@ class REST
 	{
 		// Did they use a single argument or two?
 		$params = $content ? array($header, $content) : array($header);
-
+		
 		// Pass these attributes on to the curl library
 		call_user_func_array(array($this->_ci->curl, 'http_header'), $params);
 	}
@@ -255,10 +255,10 @@ class REST
 		// Find out what format the data was returned in
 		$returned_mime = @$this->_ci->curl->info['content_type'];
 
-		// If they sent through more than just mime, strip it off
+		// If they sent through more than just mime, stip it off
 		if (strpos($returned_mime, ';'))
 		{
-			list($returned_mime) = explode(';', $returned_mime);
+			list($returned_mime)=explode(';', $returned_mime);
 		}
 
 		$returned_mime = trim($returned_mime);
@@ -292,7 +292,7 @@ class REST
 			// The substr removes " from start and end
 			$data_fields = explode('","', trim(substr($row, 1, -1)));
 
-			if (count($data_fields) === count($headings))
+			if (count($data_fields) == count($headings))
 			{
 				$data[] = array_combine($headings, $data_fields);
 			}

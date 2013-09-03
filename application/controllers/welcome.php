@@ -25,7 +25,7 @@ class Welcome extends CI_Controller {
     }
     
     public function testIdex() {
-        echo "CodeIgniter User Guide Version 2.1.4";
+        echo "CodeIgniter User Guide Version 2.1.4. Dang Ngoc Son!";
     }
 
     public function testCURL() {
