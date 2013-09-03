@@ -23,17 +23,6 @@ class Welcome extends CI_Controller {
     public function index() {
         $this->load->view('welcome_message');
     }
-    
-    public function testIdex() {
-        echo "CodeIgniter User Guide Version 2.1.4. Dang Ngoc Son!";
-    }
-
-    public function testCURL() {
-        // Simple call to remote URL
-        $testResult = $this->curl->simple_get('http://example.com/');
-        
-        echo $testResult;
-    }
 }
 
 /* End of file welcome.php */
