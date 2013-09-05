@@ -1,7 +1,7 @@
 CodeIgniter OAuth
 ==================================
 
-A complete library giving you twitter and Facebook oauth authentication and api access.
+A complete library giving you twitter or facebook authentication and api access.
 
 CodeIgniter-REST Client is a CodeIgniter library which makes it easy to do use REST services/API's such as Twitter, Facebook and Flickr, whether they are public or hidden behind HTTP Basic/Digest.
 
