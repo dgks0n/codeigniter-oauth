@@ -265,9 +265,9 @@ $config['sess_time_to_update']	= 300;
 | 'cookie_secure' =  Cookies will only be set if a secure HTTPS connection exists.
 |
 */
-$config['cookie_prefix']	= "";
-$config['cookie_domain']	= "";
-$config['cookie_path']		= "/";
+$config['cookie_prefix']	= '';
+$config['cookie_domain']	= '';
+$config['cookie_path']		= '/';
 $config['cookie_secure']	= FALSE;
 
 /*
@@ -357,6 +357,33 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+/*
+|--------------------------------------------------------------------------
+| Your application's OAuth settings
+|--------------------------------------------------------------------------
+|
+| Your application's OAuth settings. Keep the 'Consumer secret' a secret.
+| This key should never be human-readable in your application.
+|
+*/
+$config['twitter_consumer_token'] = 'BeuXHydjD3WAdHFghZe24g';
+$config['twitter_consumer_secret'] = 'iUaKSMjFziVry5LSIN5Qf1YNl040fbU2CghW4dg6I';
+$config['twitter_access_token'] = '1440048775-H30awvXuG6iwFJZuWgcDzZ73JwN6gSUXxFfnE95'; // Optional
+$config['twitter_access_secret'] = 'cxlnYDjfJ9f6xBXbz3XGvN1HipbN4lJiIa7qpocsfZQ'; // Optional
+
+/*
+|--------------------------------------------------------------------------
+| Your application's OAuth settings
+|--------------------------------------------------------------------------
+|
+| Your application's OAuth settings. Keep the 'Consumer secret' a secret.
+| This key should never be human-readable in your application.
+|
+*/
+$config['facebook'] = TRUE;
+$config['facebook_app_id'] = '553618904668508';
+$config['facebook_api_key'] = '48b351542a7a233d26dc2310ad071a99';
+$config['facebook_secret'] = '48b351542a7a233d26dc2310ad071a99';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
